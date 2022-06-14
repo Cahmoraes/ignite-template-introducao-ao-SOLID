@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Swagger Petstore",
+    "version": "3.0.0",
+    "description": "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "paths": {
+    "/users": {
+      "post": {
+        "summary": "Create an user",
+        "description": "Create an user",
+        "operationId": "",
+        "responses": {
+          "default": {
+            "description": "Default error sample response",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "user created": {
+                    "value": "{\n  \"id\": \"fake_id\" \n  \"name\": \"john\"\n  \"admin\": false\n  \"email\": \"email@server.com\"\n  \"created_at\": \"2022-06-14 00:00:00\"\n  \"updated_at\": \"2022-06-14 00:00:00\"\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Category"
+        ]
+      }
+    }
+  }
+}
